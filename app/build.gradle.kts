@@ -45,6 +45,26 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+    dependencies {
+        // ... other existing dependencies
+        implementation(libs.androidx.core.ktx)
+        implementation(libs.androidx.appcompat)
+        implementation(libs.material)
+        implementation(libs.androidx.activity)
+        implementation(libs.androidx.constraintlayout)
+        testImplementation(libs.junit)
+        androidTestImplementation(libs.androidx.junit)
+        androidTestImplementation(libs.androidx.espresso.core)
+
+        // You added this line for ViewPager2
+        implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+        // Dependencies for Navigation Component
+        implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+        implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+    }
+
 }
